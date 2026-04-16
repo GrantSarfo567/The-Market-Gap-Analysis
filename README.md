@@ -1,3 +1,44 @@
+## Executive Summary
+
+This project analyzes the Open Food Facts dataset to identify gaps in the snack market, with a focus on nutritional positioning. The findings show that the market is heavily dominated by sugar-driven products, while healthier options, particularly those combining low sugar and high protein, remain limited.
+
+Visual and segment-level analysis confirm a clear imbalance: high-sugar segments are saturated with thousands of products, whereas low-sugar, high-protein segments contain significantly fewer offerings. Additionally, while many products include protein, it is often paired with high sugar, reducing its effectiveness as a true health differentiator.
+
+This gap highlights a strong opportunity to develop snacks that deliver high protein with minimal sugar, aligning more closely with evolving consumer preferences while facing less direct competition.
+
+Overall, the analysis demonstrates that the most promising product opportunities lie in nutritionally balanced segments that are currently underrepresented in the market.
+
+---
+
+## Project Links
+
+* **Notebook:** [Jupyter Notebook](https://colab.research.google.com/drive/1MQ_9OuDnNJpjrgabxuOyytusaaJYDyET?usp=sharing)
+* **Dashboard:** [Insert your Streamlit / Tableau / Power BI link here]
+* **Presentation:** [Insert your slide deck link here]
+* *(Optional)* Video Walkthrough: [Insert YouTube link]
+
+---
+
+## Technical Explanation
+
+### Data Cleaning Approach
+
+The dataset was cleaned using a structured, rule-based approach to ensure reliability and analytical accuracy. Products with missing critical fields such as sugar and protein were removed, and biologically implausible values were filtered using domain-informed constraints (e.g., nutritional values constrained between 0–100g per 100g).
+
+This process reduced the dataset from 500,000 to 100,715 records, prioritizing data quality over quantity and ensuring that subsequent analysis reflects realistic product characteristics.
+
+---
+
+### Candidate’s Choice: Health Score vs Market Density
+
+To extend the analysis beyond basic nutrient comparison, a composite **Health Score** was introduced. This metric combines sugar, protein, fiber, and fat into a single indicator of overall nutritional desirability.
+
+By comparing this score against product count (a proxy for market competition), the analysis identifies segments that offer both high consumer value and low saturation. This provides a more strategic perspective on opportunity, moving beyond visual gaps to highlight where product development would be most effective.
+
+This addition enhances the analysis by directly linking nutritional value with market dynamics, offering a clearer foundation for decision-making.
+
+
+
 # Project Brief: The "Sugar Trap" Market Gap Analysis
 
 **Client:** Helix CPG Partners (Strategic Food & Beverage Consultancy)  
