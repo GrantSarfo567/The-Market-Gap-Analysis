@@ -5,23 +5,22 @@ import pandas as pd
 import plotly.express as px
 import numpy as np
 
-# -------------------------------
+
 # CONFIG
-# -------------------------------
+
 st.set_page_config(layout="wide")
 
-# -------------------------------
+
 # LOAD DATA
-# -------------------------------
+
 @st.cache_data
 def load_data():
     return pd.read_csv(".clean_snacks.csv")
 
 df = load_data()
 
-# -------------------------------
 # SIDEBAR → MARKET LENS
-# -------------------------------
+
 st.sidebar.title("Market Lens")
 
 st.sidebar.markdown("""
@@ -55,17 +54,17 @@ st.sidebar.markdown("### Opportunity Definition")
 sugar_limit = st.sidebar.slider("Max Sugar (g)", 0, 50, 10)
 protein_min = st.sidebar.slider("Min Protein (g)", 0, 30, 8)
 
-# -------------------------------
+
 # DEFINE OPPORTUNITY
-# -------------------------------
+
 df['is_opportunity'] = (
     (df['sugars_100g'] <= sugar_limit) &
     (df['proteins_100g'] >= protein_min)
 )
 
-# -------------------------------
+
 # HERO (CENTERED)
-# -------------------------------
+
 st.markdown("""
 <div style='text-align: center;'>
     <h1>Healthy Snack Market Opportunity</h1>
@@ -75,9 +74,9 @@ st.markdown("""
 
 st.markdown("---")
 
-# -------------------------------
+
 # EXECUTIVE INSIGHT
-# -------------------------------
+
 st.markdown("""
 ### Executive Insight
 
@@ -86,9 +85,9 @@ The snack market is heavily concentrated in sugar-driven products, while healthi
 Segments combining lower sugar with higher protein contain significantly fewer products, indicating a clear gap between supply and evolving consumer demand.
 """)
 
-# -------------------------------
+
 # KPI
-# -------------------------------
+
 col1, col2, col3, col4 = st.columns(4)
 
 col1.metric("Products", len(df))
@@ -98,9 +97,9 @@ col4.metric("Opportunity Share", f"{df['is_opportunity'].mean()*100:.1f}%")
 
 st.divider()
 
-# -------------------------------
+
 # SCATTER
-# -------------------------------
+
 st.subheader("Market Structure")
 
 fig = px.scatter(
@@ -123,9 +122,9 @@ st.plotly_chart(fig, use_container_width=True)
 
 st.caption("Green points highlight products that meet opportunity criteria.")
 
-# -------------------------------
+
 # HEATMAP
-# -------------------------------
+
 st.subheader("Market Density")
 
 heatmap = df.groupby(
@@ -141,9 +140,9 @@ fig2 = px.imshow(
     height=500
 )
 
-# -------------------------------
+
 # CANDIDATE'S CHOICE (HEALTH SCORE)
-# -------------------------------
+
 st.subheader("Candidate’s Choice: Health Score vs Market Density")
 
 st.markdown("""
@@ -154,7 +153,7 @@ This combines:
 - Higher protein (better)
 - Lower competition (better)
 
-This allows us to identify not just gaps—but **high-value gaps**.
+This allows us to identify not just gaps, but **high-value gaps**.
 """)
 
 segment_scores = df.groupby(
@@ -188,9 +187,8 @@ fig2.add_annotation(
 
 st.plotly_chart(fig2, use_container_width=True)
 
-# -------------------------------
 # MARKET DENSITY EXPLANATION
-# -------------------------------
+
 st.info("""
 **Market Density** shows how crowded each segment is:
 
@@ -200,16 +198,16 @@ st.info("""
 This helps identify where new products can stand out.
 """)
 
-# -------------------------------
+
 # OPPORTUNITY RANKING TABLE
-# -------------------------------
+
 st.subheader("Top Opportunity Segments")
 
 st.dataframe(top_segments.head(5), use_container_width=True)
 
-# -------------------------------
+
 # BEST SEGMENT CALLOUT
-# -------------------------------
+
 st.success(f"""
 **Top Opportunity Identified**
 
@@ -219,9 +217,9 @@ st.success(f"""
 This segment combines strong nutritional value with low competition.
 """)
 
-# -------------------------------
+
 # FINAL RECOMMENDATION
-# -------------------------------
+
 st.subheader("Strategic Recommendation")
 
 st.markdown("""
