@@ -12,7 +12,7 @@ Overall, the analysis demonstrates that the most promising product opportunities
 
 ## Project Links
 
-* **Notebook:** [Jupyter Notebook](https://colab.research.google.com/drive/1MQ_9OuDnNJpjrgabxuOyytusaaJYDyET?usp=sharing)
+* **Notebook:** [Jupyter Notebook](https://colab.research.google.com/drive/1lZyhmvMKIPq2D0VR_cDYc-9b2lg4laZy)
 * **Dashboard:** [Streamlit Dashboard](https://marketgapanalysis.streamlit.app/)
 * **Presentation:** [Presentation](https://docs.google.com/presentation/d/1E5G6S1OgdD_hmPhXpCyD5Xc1oRbcT2Y6/edit?slide=id.p1#slide=id.p1)
 
