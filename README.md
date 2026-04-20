@@ -13,9 +13,8 @@ Overall, the analysis demonstrates that the most promising product opportunities
 ## Project Links
 
 * **Notebook:** [Jupyter Notebook](https://colab.research.google.com/drive/1MQ_9OuDnNJpjrgabxuOyytusaaJYDyET?usp=sharing)
-* **Dashboard:** [Insert your Streamlit / Tableau / Power BI link here]
-* **Presentation:** [Insert your slide deck link here]
-* *(Optional)* Video Walkthrough: [Insert YouTube link]
+* **Dashboard:** [Streamlit Dashboard](https://marketgapanalysis.streamlit.app/)
+* **Presentation:** [Presentation](https://docs.google.com/presentation/d/1E5G6S1OgdD_hmPhXpCyD5Xc1oRbcT2Y6/edit?slide=id.p1#slide=id.p1)
 
 ---
 
@@ -51,7 +50,7 @@ This addition enhances the analysis by directly linking nutritional value with m
 
 They have hired us to answer one question: **"Where is the 'Blue Ocean' in the snack aisle?"**
 
-Specifically, they are looking for product categories that are currently under-served—areas where consumer demand for health (e.g., High Protein, High Fiber) is not being met by current product offerings (which are mostly High Sugar, High Fat).
+Specifically, they are looking for product categories that are currently under-served, areas where consumer demand for health (e.g., High Protein, High Fiber) is not being met by current product offerings (which are mostly High Sugar, High Fat).
 
 ## 2. The Data
 You will use the **Open Food Facts** dataset, a free, open, and massive database of food products from around the world.
@@ -167,20 +166,20 @@ Please edit this `README.md` file in your forked repository to include the follo
 > **We do not accept "permission error" excuses. Test your links in Incognito Mode.**
 
 ### 1. Repository & Code Checks
-- [ ] **My GitHub Repo is Public.** (Open the link in a Private/Incognito window to verify).
-- [ ] **I have uploaded the `.ipynb` notebook file.**
-- [ ] **I have ALSO uploaded an HTML or PDF export** of the notebook.
-- [ ] **I have NOT uploaded the massive raw dataset.** (Use `.gitignore` or just don't commit the CSV).
-- [ ] **My code uses Relative Paths.** 
+- ✅ **My GitHub Repo is Public.** (Open the link in a Private/Incognito window to verify).
+- ✅ **I have uploaded the `.ipynb` notebook file.**
+- ✅ **I have ALSO uploaded an HTML or PDF export** of the notebook.
+- ✅ **I have NOT uploaded the massive raw dataset.** (Use `.gitignore` or just don't commit the CSV).
+- ✅ **My code uses Relative Paths.** 
 
 ### 2. Deliverable Checks
-- [ ] **My Dashboard link is publicly accessible.** (No login required).
-- [ ] **My Presentation link is publicly accessible.** (Permissions set to "Anyone with the link can view").
-- [ ] **I have updated this `README.md` file** with my Executive Summary and technical notes.
+- ✅ **My Dashboard link is publicly accessible.** (No login required).
+- ✅ **My Presentation link is publicly accessible.** (Permissions set to "Anyone with the link can view").
+- ✅ **I have updated this `README.md` file** with my Executive Summary and technical notes.
 
 ### 3. Completeness
-- [ ] I have completed **User Stories 1-4**.
-- [ ] I have completed the **"Candidate's Choice"** challenge and explained it in the README.
+- ✅ I have completed **User Stories 1-4**.
+- ✅ I have completed the **"Candidate's Choice"** challenge and explained it in the README.
 
 **✅ Only when you have checked every box above, proceed to the submission form.**
 
