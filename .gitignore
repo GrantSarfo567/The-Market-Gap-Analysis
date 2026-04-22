@@ -1,9 +1,3 @@
 # ignore specific file
-data/clean_snacks.csv
+clean_snacks.csv
 
-# or ignore all CSVs in a folder
-data/*.csv# ignore specific file
-data/my_data.csv
-
-# or ignore all CSVs in a folder
-data/*.csv
